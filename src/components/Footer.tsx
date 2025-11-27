@@ -16,14 +16,12 @@ export default function Footer() {
                     </div>
 
                     <div className={styles.links}>
-                        <Link href="#" className={styles.link}>利用規約</Link>
-                        <Link href="#" className={styles.link}>プライバシーポリシー</Link>
-                        <Link href="#" className={styles.link}>お問い合わせ</Link>
+                        {/* <Link href="#" className={styles.link}>お問い合わせ</Link> */}
                     </div>
                 </div>
 
                 <div className={styles.copyright}>
-                    &copy; {new Date().getFullYear()} Mikatakun. All rights reserved.
+                    &copy; {new Date().getFullYear()} みかたくん. All rights reserved.
                 </div>
             </div>
         </footer>

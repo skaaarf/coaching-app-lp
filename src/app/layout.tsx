@@ -9,8 +9,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "みかたくん - 対話とゲームでキャリアを考える",
-  description: "対話とゲームでキャリアを考えるアプリ「みかたくん」。AIとの対話やゲームを通じて、楽しく自己分析やキャリアプランニングができます。",
+  title: "みかたくん - 学生のためのAI進路相談",
+  description: "進路に悩む学生のためのAI進路相談アプリ「みかたくん」。AIとの対話を通じて、自己分析や将来のキャリアについて深く考えることができます。",
 };
 
 export default function RootLayout({

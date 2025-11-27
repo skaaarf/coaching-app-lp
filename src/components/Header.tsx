@@ -16,7 +16,7 @@ export default function Header() {
                     <Link href="#about" className={styles.navLink}>みかたくんとは</Link>
                 </nav>
 
-                <a href="https://app.career-counseller.jp/" className={`btn btn-primary ${styles.ctaButton}`}>
+                <a href="https://app.career-counseller.jp/" className={`btn btn-primary ${styles.ctaButton}`} target="_blank" rel="noopener noreferrer">
                     アプリを開く
                 </a>
             </div>

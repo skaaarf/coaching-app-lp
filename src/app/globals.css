@@ -1,14 +1,23 @@
 :root {
+  /* Clean Blue Theme */
   --primary: #0A84FF;
+  /* Standard Trustworthy Blue */
   --primary-hover: #0077ED;
+  --secondary: #F5F5F7;
+  /* Light Gray */
+  --accent: #0A84FF;
+  /* Keep accent blue */
+
   --background: #FFFFFF;
-  --foreground: #000000;
-  --text-sub: #888888;
-  --text-tertiary: #C7C7CC;
-  --gray-bg: #F5F5F7;
+  --foreground: #1D1D1F;
+  --text-sub: #86868B;
+
+  --card-bg: #FFFFFF;
+  --card-border: #E5E5EA;
+
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
