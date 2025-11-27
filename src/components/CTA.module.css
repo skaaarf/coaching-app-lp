@@ -1,0 +1,59 @@
+.section {
+    padding: 6rem 0;
+    background-color: var(--background);
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background: linear-gradient(135deg, var(--primary) 0%, #FF7043 100%);
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    color: white;
+    box-shadow: var(--shadow-lg);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.description {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    background-color: white;
+    color: var(--primary);
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
