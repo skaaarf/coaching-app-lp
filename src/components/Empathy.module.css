@@ -1,11 +1,11 @@
 .section {
-    background-color: var(--gray-bg);
+    padding: 100px 24px;
+    background-color: #fff;
 }
 
 .container {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 0 24px;
 }
 
 .header {
@@ -15,43 +15,83 @@
 
 .title {
     font-size: 2rem;
-    margin-bottom: 16px;
+    font-weight: 700;
     color: var(--foreground);
+    letter-spacing: 0.05em;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-}
-
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
 }
 
 .card {
-    background: white;
-    padding: 32px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    transition: transform 0.3s ease;
+    padding: 24px;
 }
 
-.card:hover {
-    transform: translateY(-4px);
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: var(--primary);
 }
 
-.icon {
-    font-size: 2rem;
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
     margin-bottom: 16px;
-    display: block;
+    color: var(--foreground);
 }
 
-.cardText {
-    font-size: 1.1rem;
-    font-weight: 600;
+.pointList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.pointList li {
+    font-size: 1rem;
+    line-height: 1.6;
     color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .card {
+        padding: 0;
+    }
+
+    .iconWrapper {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .iconWrapper svg {
+        width: 32px;
+        height: 32px;
+    }
 }
