@@ -15,8 +15,11 @@ export default function Closing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    自分の人生と、<br />
-                    ちゃんと向き合ってみる。
+                    迷うのは自然なこと。<br />
+                    でも、一人で抱え込む必要はない。<br />
+                    <br />
+                    あなたの<span className={styles.highlight}>“本音”</span>と<span className={styles.highlight}>“未来”</span>を<br />
+                    真剣に考えるAIコーチ
                 </motion.h2>
 
                 <motion.div
@@ -26,11 +29,11 @@ export default function Closing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    <a href="https://app.career-counseller.jp/" className="btn btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem' }}>
-                        味方くんを始める <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
+                    <a href="https://app.career-counseller.jp/" className="btn btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem' }} target="_blank" rel="noopener noreferrer">
+                        無料で使ってみる <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
                     </a>
                 </motion.div>
             </div>
-        </section>
+        </section >
     );
 }
