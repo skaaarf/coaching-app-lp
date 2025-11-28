@@ -11,7 +11,7 @@
 
 .header {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .title {
@@ -25,67 +25,50 @@
     display: flex;
     flex-direction: column;
     gap: 160px;
-    /* Increased gap for better separation */
 }
 
 .featureRow {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
 }
 
-/* Visuals Styling */
-.visualsColumn {
+/* UI Column (Left) */
+.uiColumn {
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.visualsWrapper {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
-    /* Fixed height container for composition */
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .uiImageContainer {
     position: relative;
-    width: 260px;
-    /* Slightly smaller UI */
-    height: 520px;
-    z-index: 2;
-    /* UI on top */
+    width: 280px;
+    height: 560px;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
-    /* Soft shadow */
+}
+
+/* Content Column (Right) */
+.contentColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .illustrationContainer {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    z-index: 1;
-    /* Illustration behind */
-    right: 0;
-    bottom: 40px;
-    /* Positioned relative to wrapper */
-}
-
-/* Text Styling */
-.textColumn {
-    width: 100%;
-    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 32px;
 }
 
 .featureTitle {
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--foreground);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     line-height: 1.4;
 }
 
@@ -94,76 +77,51 @@
     line-height: 2;
     color: var(--text-sub);
     text-align: left;
-    /* Keep text left aligned for readability */
     display: inline-block;
-    /* Allows text-align center on parent to center the block */
 }
 
-/* Desktop Layout (Zigzag) */
+/* Desktop Layout */
 @media (min-width: 1024px) {
     .featureRow {
         flex-direction: row;
         justify-content: space-between;
         gap: 80px;
+        align-items: center;
+        /* Align vertically center */
     }
 
-    .featureRow.reverse {
-        flex-direction: row-reverse;
-    }
-
-    .visualsColumn {
-        width: 50%;
-    }
-
-    .textColumn {
+    .uiColumn {
         width: 45%;
+        justify-content: flex-end;
+        /* Push UI towards center */
+    }
+
+    .contentColumn {
+        width: 45%;
+        align-items: flex-start;
         text-align: left;
     }
 
-    /* Adjust illustration position based on side */
-    .featureRow .illustrationContainer {
-        right: -40px;
-        /* Illustration peeking out to the right */
-        bottom: 80px;
+    .illustrationContainer {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 40px;
     }
 
-    .featureRow.reverse .illustrationContainer {
-        right: auto;
-        left: -40px;
-        /* Illustration peeking out to the left */
-        bottom: 80px;
+    .featureTitle {
+        font-size: 2rem;
+        margin-bottom: 32px;
     }
 }
 
 /* Mobile Layout Adjustments */
 @media (max-width: 1023px) {
-    .visualsWrapper {
-        height: auto;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+    .featureRow {
+        gap: 40px;
     }
 
     .uiImageContainer {
         width: 240px;
         height: 480px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .illustrationContainer {
-        position: relative;
-        width: 280px;
-        height: 280px;
-        right: auto;
-        bottom: auto;
-        left: auto;
-        z-index: 1;
-        margin-top: -100px;
-        /* Overlap slightly */
-    }
-
-    .featureDescription {
-        text-align: left;
     }
 }

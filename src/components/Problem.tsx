@@ -14,10 +14,10 @@ export default function Problem() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className={styles.title}>なぜ、悩みが続いてしまうのか。</h2>
+                    <h2 className={styles.title}>どうして、この悩みはずっと消えないのか。</h2>
                     <p className={styles.intro}>
-                        それは“情報不足”ではなく、“話せる相手がいないこと”と<br className={styles.desktopBreak} />
-                        “自分の軸が分からないこと”が原因です。
+                        あなたに問題があるわけではありません。<br />
+                        この悩みには、ちゃんとした理由があります。
                     </p>
                 </motion.div>
 
@@ -29,16 +29,19 @@ export default function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h3 className={styles.blockTitle}>① 相談できる相手がいない</h3>
-                        <p className={styles.blockText}>
-                            悩みを話したい気持ちはあるのに、<br />
-                            相談できる相手が周りにいません。
+                        <h3 className={styles.blockTitle}>話しにくいから、相談できない</h3>
+                        <p className={styles.blockIntro}>
+                            誰かに話したい気持ちはあるのに、<br />
+                            “ちょうどいい相手”がいません。
                         </p>
                         <ul className={styles.blockList}>
-                            <li>友達は同じ立場で、逆に気を使ってしまう</li>
-                            <li>家族には、言いづらいことが多い</li>
-                            <li>大学の相談窓口は、距離があって行きづらい</li>
+                            <li>友達には気をつかう</li>
+                            <li>家族には心配をかけたくない</li>
+                            <li>先生はちょっと堅い</li>
                         </ul>
+                        <p className={styles.blockClosing}>
+                            だから、相談が後回しになってしまいます。
+                        </p>
                     </motion.div>
 
                     <motion.div
@@ -48,16 +51,18 @@ export default function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        <h3 className={styles.blockTitle}>② 自分が何を大切にしたいか分からない</h3>
-                        <p className={styles.blockText}>
-                            やりたいことが分からない。<br />
-                            興味や価値観が曖昧で、うまく言葉にできない。
+                        <h3 className={styles.blockTitle}>ひとりだと気持ちを言葉にしにくい</h3>
+                        <p className={styles.blockIntro}>
+                            自分の気持ちは、頭の中だけでは整理できません。
                         </p>
                         <ul className={styles.blockList}>
-                            <li>頑張ってきたことを思い出せない</li>
-                            <li>なぜそれを選んだのか説明できない</li>
-                            <li>判断基準がなく、選択肢の比較ができない</li>
+                            <li>これまでの経験を振り返る機会が少ない</li>
+                            <li>価値観を言葉にする練習をしたことがない</li>
+                            <li>誰かと話すことで、初めて気づけることが多い</li>
                         </ul>
+                        <p className={styles.blockClosing}>
+                            ひとりで考えても、本音にたどり着けないことが多いんです。
+                        </p>
                     </motion.div>
 
                     <motion.div
@@ -67,16 +72,19 @@ export default function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <h3 className={styles.blockTitle}>③ その結果、迷い・焦り・停滞が続く</h3>
-                        <p className={styles.blockText}>
-                            考えようとするほど不安が大きくなり、<br />
-                            進路のことを後回しにしてしまう。
+                        <h3 className={styles.blockTitle}>比べるための材料が足りない</h3>
+                        <p className={styles.blockIntro}>
+                            「どの進路がいいか分からない」のは、<br />
+                            単に情報が少ないからではありません。
                         </p>
                         <ul className={styles.blockList}>
-                            <li>周りと比べて焦る</li>
-                            <li>自信が持てない</li>
-                            <li>何から始めたらいいか分からない</li>
+                            <li>どんな働き方があるのか知らない</li>
+                            <li>先輩がどんな道を歩んできたか知らない</li>
+                            <li>自分の価値観と比べられない</li>
                         </ul>
+                        <p className={styles.blockClosing}>
+                            材料が揃っていなければ、選ぶのは難しくて当然です。
+                        </p>
                     </motion.div>
                 </div>
 
@@ -88,8 +96,9 @@ export default function Problem() {
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
                     <p>
-                        悩みが続くのは、あなたのせいではありません。<br />
-                        理由が分からないまま、ひとりで抱えてきただけです。
+                        つまり、<br />
+                        「話す場所がない」「気持ちを言葉にできない」「選ぶための材料がない」<br />
+                        この3つがそろうと、誰だって迷ってしまいます。
                     </p>
                 </motion.div>
             </div>

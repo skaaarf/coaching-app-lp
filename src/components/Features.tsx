@@ -7,62 +7,63 @@ import { motion } from 'framer-motion';
 export default function Features() {
     const features = [
         {
-            title: "いつでも、どんな悩みでも話せる。",
+            title: "悩みを相談できる",
             description: (
                 <>
-                    将来のこと、勉強のこと、人間関係のこと。<br />
-                    誰にも言えない不安も、AIが丁寧に受け止めてくれます。<br />
+                    いつでも、素直に話せる相手がいる。<br />
+                    友達や家族には言いにくいことも、<br />
+                    ここなら気をつかわずに話せます。<br />
                     <br />
-                    否定しない。急かさない。<br />
-                    あなたの言葉を大切に、ゆっくり整理を助けてくれます。
+                    AIがあなたのペースに合わせて、<br />
+                    ゆっくり気持ちを整理してくれます。
                 </>
             ),
-            uiImage: "/feature_consult_ui_new.png",
-            illustration: "/feature_consult_illustration.jpg"
+            uiImage: "/feature_consult_ui_latest.png",
+            illustration: "/feature_consult_illustration_v2.jpg"
         },
         {
-            title: "人生の材料を集めて、“自分の物語”をつくる。",
+            title: "自分を振り返る",
             description: (
                 <>
-                    これまでの経験や、頑張ってきたこと。<br />
-                    普段は忘れている大切なエピソードを、一緒に言語化します。<br />
+                    これまでの経験を、もう一度ちゃんと見つめる。<br />
                     <br />
-                    あなたの選択や行動の“理由”が見えると、<br />
-                    自分の軸が自然と浮かび上がってきます。
+                    部活、勉強、行事、アルバイト…。<br />
+                    気づかないうちに積み重ねてきたことは、たくさんあります。<br />
+                    <br />
+                    振り返るほど、あなたの“らしさ”が見えてきます。
                 </>
             ),
-            uiImage: "/feature_reflection.png",
-            illustration: "/feature_reflection_hand.png" // Placeholder
+            uiImage: "/feature_reflection_ui.png",
+            illustration: "/feature_reflection_illustration_v2.jpg"
         },
         {
-            title: "あなたが本当に大切にしているものが、言葉になる。",
+            title: "自分の特性に気づく",
             description: (
                 <>
-                    会話の中から、あなたの価値観・興味・こだわりが浮かび上がります。<br />
+                    本当の気持ちや、大事にしたいことが分かってくる。<br />
                     <br />
-                    “何を大事にしたい？”<br />
-                    “どんな時に心が動く？”<br />
+                    会話の中から、あなたの興味や考え方のパターンが浮かび上がります。<br />
                     <br />
-                    この問いに答えが出ると、<br />
-                    進路選択の“判断基準”が手に入ります。
+                    それが、進路を選ぶときの“判断の軸”になります。
                 </>
             ),
-            uiImage: "/feature_values.png",
-            illustration: "/feature_reflection_hand.png" // Placeholder
+            uiImage: "/feature_values_ui.png",
+            illustration: "/feature_values_illustration_v2.jpg"
         },
         {
-            title: "先輩のストーリーから、未来のヒントを見つける。",
+            title: "いろんなキャリアを知る",
             description: (
                 <>
-                    あなたと似た価値観・経験を持つ先輩が、<br />
-                    どんな選択をして、どんな道を歩んできたのか。<br />
+                    自分に近い先輩の道を知ると、未来が見えやすくなる。<br />
                     <br />
-                    一人ひとりのキャリアの“流れ”を見比べることで、<br />
-                    自分の未来が、少しずつ形を帯びて見えてきます。
+                    あなたと似た経験の先輩が、どんな道を歩んできたのか。<br />
+                    <br />
+                    リアルなストーリーに触れると、<br />
+                    未来のイメージがぐっと広がります。
                 </>
             ),
-            uiImage: "/feature_career.png",
-            illustration: "/feature_reflection_hand.png" // Placeholder
+            uiImage: "/feature_career_ui.png",
+            illustration: "/feature_career_illustration_v2.jpg"
         }
     ];
 
@@ -85,36 +86,34 @@ export default function Features() {
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
-                            className={`${styles.featureRow} ${index % 2 === 1 ? styles.reverse : ''}`}
+                            className={styles.featureRow}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8 }}
                         >
-                            {/* Visuals Column (UI + Illustration) */}
-                            <div className={styles.visualsColumn}>
-                                <div className={styles.visualsWrapper}>
-                                    <div className={styles.uiImageContainer}>
-                                        <Image
-                                            src={feature.uiImage}
-                                            alt={`${feature.title} UI`}
-                                            fill
-                                            style={{ objectFit: 'contain' }}
-                                        />
-                                    </div>
-                                    <div className={styles.illustrationContainer}>
-                                        <Image
-                                            src={feature.illustration}
-                                            alt="Illustration"
-                                            fill
-                                            style={{ objectFit: 'contain' }}
-                                        />
-                                    </div>
+                            {/* Left Column: UI Image */}
+                            <div className={styles.uiColumn}>
+                                <div className={styles.uiImageContainer}>
+                                    <Image
+                                        src={feature.uiImage}
+                                        alt={`${feature.title} UI`}
+                                        fill
+                                        style={{ objectFit: 'contain' }}
+                                    />
                                 </div>
                             </div>
 
-                            {/* Text Column */}
-                            <div className={styles.textColumn}>
+                            {/* Right Column: Illustration + Text */}
+                            <div className={styles.contentColumn}>
+                                <div className={styles.illustrationContainer}>
+                                    <Image
+                                        src={feature.illustration}
+                                        alt="Illustration"
+                                        fill
+                                        style={{ objectFit: 'contain' }}
+                                    />
+                                </div>
                                 <h3 className={styles.featureTitle}>{feature.title}</h3>
                                 <div className={styles.featureDescription}>{feature.description}</div>
                             </div>
