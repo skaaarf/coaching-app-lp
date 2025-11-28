@@ -112,6 +112,19 @@
         font-size: 2rem;
         margin-bottom: 32px;
     }
+
+    .featureRow:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .featureRow:nth-child(even) .contentColumn {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .featureRow:nth-child(even) .uiColumn {
+        justify-content: flex-start;
+    }
 }
 
 /* Mobile Layout Adjustments */

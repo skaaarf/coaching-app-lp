@@ -24,7 +24,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1 }}
                 >
-                    進む道を、一緒に見つけよう。
+                    進む道を<br />一緒に見つけようk
                 </motion.h1>
 
                 <motion.div

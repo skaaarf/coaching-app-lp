@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Features() {
     const features = [
         {
-            title: "悩みを相談できる",
+            title: "悩みを相談する",
             description: (
                 <>
                     いつでも、素直に話せる相手がいる。<br />
