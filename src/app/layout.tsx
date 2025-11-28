@@ -9,14 +9,35 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "みかたくん - 学生のためのAI進路相談",
-  description: "進路に悩む学生のためのAI進路相談アプリ「みかたくん」。AIとの対話を通じて、自己分析や将来のキャリアについて深く考えることができます。",
+  title: "みかたくん｜進路に迷う学生のためのAIキャリア相談アプリ",
+  description: "進路に迷う高校生・大学生へ。AIキャリアコーチ「みかたくん」が、悩み相談・価値観分析・振り返り・進路整理をサポート。将来の仕事選びや、大学生の就活前の自己理解にも役立ちます。あなたらしい道を一緒に見つけるAIアプリです。",
   metadataBase: new URL('https://career-counseller.jp'),
   alternates: {
     canonical: '/',
   },
   icons: {
     icon: '/icon.png',
+  },
+  openGraph: {
+    title: "みかたくん｜進路に迷う学生のためのAIキャリア相談アプリ",
+    description: "進路に迷う高校生・大学生へ。AIキャリアコーチ「みかたくん」が、悩み相談・価値観分析・振り返り・進路整理をサポート。将来の仕事選びや、大学生の就活前の自己理解にも役立ちます。あなたらしい道を一緒に見つけるAIアプリです。",
+    url: 'https://career-counseller.jp',
+    siteName: 'みかたくん',
+    images: [
+      {
+        url: '/icon.png',
+        width: 512,
+        height: 512,
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: "みかたくん｜進路に迷う学生のためのAIキャリア相談アプリ",
+    description: "進路に迷う高校生・大学生へ。AIキャリアコーチ「みかたくん」が、悩み相談・価値観分析・振り返り・進路整理をサポート。将来の仕事選びや、大学生の就活前の自己理解にも役立ちます。あなたらしい道を一緒に見つけるAIアプリです。",
+    images: ['/icon.png'],
   },
 };
 
