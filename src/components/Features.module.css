@@ -111,6 +111,16 @@
     .featureTitle {
         font-size: 2rem;
         margin-bottom: 32px;
+        width: auto;
+        /* Allow width to exceed image */
+        white-space: nowrap;
+        /* Prevent wrapping */
+        text-align: left;
+    }
+
+    .featureDescription {
+        width: 240px;
+        /* margin: 0 auto; Removed to respect flex alignment */
     }
 
     .featureRow:nth-child(even) {
@@ -119,7 +129,8 @@
 
     .featureRow:nth-child(even) .contentColumn {
         align-items: flex-end;
-        text-align: right;
+        text-align: left;
+        /* Reset text align to left */
     }
 
     .featureRow:nth-child(even) .uiColumn {

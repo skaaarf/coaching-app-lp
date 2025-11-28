@@ -24,7 +24,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1 }}
                 >
-                    進む道を<br />一緒に見つけようk
+                    進む道を<br />一緒に見つけよう
                 </motion.h1>
 
                 <motion.div
@@ -37,7 +37,7 @@ export default function Hero() {
                         誰に相談していいか分からなくても、焦らなくていい。<br />
                         AIがあなたの話を受け止め、これから進む道を一緒に探します。<br />
                         <br />
-                        <span className={styles.message}>君は1人じゃない</span>
+                        <span className={styles.message}>あなたは1人じゃない</span>
                     </p>
                 </motion.div>
 
