@@ -9,7 +9,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "みかたくん｜進路に迷う学生のためのAIキャリア相談アプリ",
+  title: "みかたくん｜進路に迷う学生のためのAIキャリア・進路相談",
   description: "進路に迷う高校生・大学生へ。AIキャリアコーチ「みかたくん」が、悩み相談・価値観分析・振り返り・進路整理をサポート。将来の仕事選びや、大学生の就活前の自己理解にも役立ちます。あなたらしい道を一緒に見つけるAIアプリです。",
   metadataBase: new URL('https://career-counseller.jp'),
   alternates: {
