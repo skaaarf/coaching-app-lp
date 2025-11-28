@@ -2,6 +2,7 @@
 
 import styles from './Problem.module.css';
 import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 
 export default function Problem() {
     return (
@@ -30,17 +31,14 @@ export default function Problem() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <h3 className={styles.blockTitle}>話しにくいから、相談できない</h3>
-                        <p className={styles.blockIntro}>
-                            話したいのに、<br />
-                            “ちょうどいい相手”がいません。
-                        </p>
+
                         <ul className={styles.blockList}>
                             <li>友達には気をつかう</li>
-                            <li>家族に心配かけたくない</li>
+                            <li>家族には心配をかけたくない</li>
                             <li>先生はちょっと堅い</li>
                         </ul>
                         <p className={styles.blockClosing}>
-                            だから、相談が後回しに。
+                            だから、相談が後回しになってしまいます。
                         </p>
                     </motion.div>
 
@@ -51,17 +49,15 @@ export default function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        <h3 className={styles.blockTitle}>ひとりだと言葉にしにくい</h3>
-                        <p className={styles.blockIntro}>
-                            気持ちは、頭の中だけでは整理できません。
-                        </p>
+                        <h3 className={styles.blockTitle}>ひとりだと気持ちを言葉にしにくい</h3>
+
                         <ul className={styles.blockList}>
-                            <li>振り返る機会が少ない</li>
-                            <li>言語化する練習が足りない</li>
-                            <li>話して初めて気づくことが多い</li>
+                            <li>これまでの経験を振り返る機会が少ない</li>
+                            <li>価値観を言葉にする練習をしたことがない</li>
+                            <li>誰かと話すことで、初めて気づけることが多い</li>
                         </ul>
                         <p className={styles.blockClosing}>
-                            ひとりでは本音にたどり着けません。
+                            ひとりで考えても、本音にたどり着けないことが多いんです。
                         </p>
                     </motion.div>
 
@@ -72,18 +68,15 @@ export default function Problem() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <h3 className={styles.blockTitle}>比べる材料が足りない</h3>
-                        <p className={styles.blockIntro}>
-                            「分からない」のは、<br />
-                            情報不足だけではありません。
-                        </p>
+                        <h3 className={styles.blockTitle}>比べるための材料が足りない</h3>
+
                         <ul className={styles.blockList}>
-                            <li>働き方を知らない</li>
-                            <li>先輩の歩んだ道を知らない</li>
+                            <li>どんな働き方があるのか知らない</li>
+                            <li>先輩がどんな道を歩んできたか知らない</li>
                             <li>自分の価値観と比べられない</li>
                         </ul>
                         <p className={styles.blockClosing}>
-                            材料なしで選ぶのは難しいものです。
+                            材料が揃っていなければ、選ぶのは難しくて当然です。
                         </p>
                     </motion.div>
                 </div>
@@ -96,7 +89,12 @@ export default function Problem() {
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
                     <p>
+                        こんな状況では、誰だって迷ってしまいます。
+                    </p>
+                    <p className={styles.messageWrapper}>
+                        <Sparkles size={24} className={styles.icon} />
                         <span className={styles.message}>そんなあなたの力になれたら</span>
+                        <Sparkles size={24} className={styles.icon} />
                     </p>
                 </motion.div>
             </div>

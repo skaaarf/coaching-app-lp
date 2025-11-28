@@ -1,31 +1,12 @@
 .section {
-    padding: 120px 24px;
+    padding: 160px 24px;
     background-color: #fff;
     overflow: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* ... existing styles ... */
 
-.header {
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-.title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--foreground);
-    letter-spacing: 0.05em;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 160px;
-}
+/* ... existing styles ... */
 
 .featureRow {
     display: flex;
@@ -71,6 +52,14 @@
     width: fit-content;
 }
 
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
 .featureTitle {
     font-size: 1.75rem;
     font-weight: 700;
@@ -87,31 +76,31 @@
     display: inline-block;
 }
 
-/* Desktop Layout */
-@media (min-width: 1024px) {
+/* Desktop Layout (Tablet Landscape and up) */
+@media (min-width: 768px) {
     .featureRow {
         flex-direction: row;
         justify-content: space-between;
-        gap: 80px;
+        gap: 40px;
+        /* Reduced gap for tablet */
         align-items: center;
-        /* Align vertically center */
     }
 
     .uiColumn {
-        width: 45%;
+        width: 48%;
+        /* Increased width slightly */
         justify-content: flex-end;
-        /* Push UI towards center */
     }
 
     .contentColumn {
-        width: 45%;
+        width: 48%;
         align-items: flex-start;
         text-align: left;
     }
 
+    /* ... other desktop styles ... */
     .illustrationContainer {
         width: 290px;
-        /* 120% of 240px */
         height: 290px;
         margin-bottom: 40px;
     }
@@ -120,16 +109,12 @@
         font-size: 2rem;
         margin-bottom: 32px;
         width: auto;
-        /* Allow width to exceed image */
         white-space: nowrap;
-        /* Prevent wrapping */
         text-align: left;
     }
 
     .featureDescription {
         width: 290px;
-        /* Match illustration width */
-        /* margin: 0 auto; Removed to respect flex alignment */
     }
 
     .featureRow:nth-child(even) {
@@ -139,7 +124,6 @@
     .featureRow:nth-child(even) .contentColumn {
         align-items: flex-end;
         text-align: left;
-        /* Reset text align to left */
     }
 
     .featureRow:nth-child(even) .uiColumn {
@@ -147,8 +131,41 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .featureRow {
+        gap: 80px;
+        /* Restore larger gap for desktop */
+    }
+
+    .uiColumn {
+        width: 45%;
+    }
+
+    .contentColumn {
+        width: 45%;
+    }
+}
+
 /* Mobile Layout Adjustments */
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
+    .section {
+        padding: 100px 24px;
+    }
+
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .list {
+        gap: 80px;
+    }
+
     .featureRow {
         gap: 40px;
     }

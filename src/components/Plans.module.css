@@ -62,6 +62,26 @@
     }
 }
 
+@media (max-width: 767px) {
+    .freeCard {
+        padding: 40px 24px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+
+    .badge {
+        margin-bottom: 24px;
+        font-size: 0.9rem;
+    }
+}
+
 .card {
     background: white;
     padding: 32px;

@@ -1,10 +1,14 @@
 .hero {
-    padding-top: 180px;
-    padding-bottom: 120px;
+    padding-top: 220px;
+    padding-bottom: 160px;
     background: var(--background);
     overflow: hidden;
     position: relative;
 }
+
+/* ... existing styles ... */
+
+/* ... existing styles ... */
 
 .container {
     max-width: 1080px;
@@ -119,5 +123,21 @@
 @media (min-width: 768px) {
     .desktopBreak {
         display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding-top: 160px;
+        padding-bottom: 120px;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .valueList li {
+        gap: 16px;
+        font-size: 0.95rem;
     }
 }

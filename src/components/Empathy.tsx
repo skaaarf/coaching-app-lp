@@ -9,26 +9,17 @@ export default function Empathy() {
         {
             icon: <MessageCircle size={48} strokeWidth={1.5} />,
             title: "相談できる相手がいない",
-            points: [
-                "友達には言いにくい",
-                "家族や先生には、逆に話しづらい"
-            ]
+            points: []
         },
         {
             icon: <Sparkles size={48} strokeWidth={1.5} />,
             title: "自分の本音がわからない",
-            points: [
-                "本当は何がしたいのか分からない",
-                "考えても、気持ちがまとまらない"
-            ]
+            points: []
         },
         {
             icon: <Scale size={48} strokeWidth={1.5} />,
             title: "未来の選択肢を比べられない",
-            points: [
-                "どんな道があるのかイメージできない",
-                "何を基準に決めたらいいのか分からない"
-            ]
+            points: []
         }
     ];
 
@@ -71,11 +62,13 @@ export default function Empathy() {
                                 {item.icon}
                             </div>
                             <h3 className={styles.cardTitle}>{item.title}</h3>
-                            <ul className={styles.pointList}>
-                                {item.points.map((point, i) => (
-                                    <li key={i}>{point}</li>
-                                ))}
-                            </ul>
+                            {item.points.length > 0 && (
+                                <ul className={styles.pointList}>
+                                    {item.points.map((point, i) => (
+                                        <li key={i}>{point}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </motion.div>
                     ))}
                 </div>
@@ -87,9 +80,6 @@ export default function Empathy() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                    <p className={styles.closing}>
-                        実は、こうした悩みには“同じ理由”があります。
-                    </p>
                 </motion.div>
             </div>
         </section>
