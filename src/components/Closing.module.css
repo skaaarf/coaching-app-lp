@@ -26,3 +26,11 @@
 .buttonWrapper {
     display: inline-block;
 }
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--foreground);
+    /* Changed to black/foreground */
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}

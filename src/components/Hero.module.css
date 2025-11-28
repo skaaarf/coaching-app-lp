@@ -56,8 +56,11 @@
 
 .message {
     font-weight: bold;
-    color: var(--primary);
+    color: #FDB03D;
     font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
 }
 
 .valueList {
@@ -75,7 +78,8 @@
 .valueList li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 36px;
+    /* Increased to shift text right (~2-3 chars) */
     font-size: 1rem;
     color: var(--foreground);
     font-weight: 500;

@@ -11,10 +11,10 @@ export default function Header() {
                     <span>みかたくん</span>
                 </Link>
 
-                <nav className={styles.nav}>
+                {/* <nav className={styles.nav}>
                     <Link href="#features" className={styles.navLink}>特徴</Link>
                     <Link href="#about" className={styles.navLink}>みかたくんとは</Link>
-                </nav>
+                </nav> */ }
 
                 <a href="https://app.career-counseller.jp/" className={`btn btn-primary ${styles.ctaButton}`} target="_blank" rel="noopener noreferrer">
                     アプリを開く

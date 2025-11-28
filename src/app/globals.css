@@ -1,11 +1,11 @@
 :root {
   /* Clean Blue Theme */
-  --primary: #0A84FF;
-  /* Standard Trustworthy Blue */
-  --primary-hover: #0077ED;
+  --primary: #465DAA;
+  /* Calm Indigo Blue */
+  --primary-hover: #384A88;
   --secondary: #F5F5F7;
   /* Light Gray */
-  --accent: #0A84FF;
+  --accent: #465DAA;
   /* Keep accent blue */
 
   --background: #FFFFFF;
