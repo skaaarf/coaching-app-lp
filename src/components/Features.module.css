@@ -64,6 +64,13 @@
     margin-bottom: 32px;
 }
 
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
 .featureTitle {
     font-size: 1.75rem;
     font-weight: 700;
@@ -103,8 +110,9 @@
     }
 
     .illustrationContainer {
-        width: 240px;
-        height: 240px;
+        width: 290px;
+        /* 120% of 240px */
+        height: 290px;
         margin-bottom: 40px;
     }
 
@@ -119,7 +127,8 @@
     }
 
     .featureDescription {
-        width: 240px;
+        width: 290px;
+        /* Match illustration width */
         /* margin: 0 auto; Removed to respect flex alignment */
     }
 

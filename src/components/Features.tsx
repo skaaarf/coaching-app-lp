@@ -86,7 +86,7 @@ export default function Features() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        味方くんができること
+                        味方くんとできること
                     </motion.h2>
                 </div>
 
@@ -114,16 +114,18 @@ export default function Features() {
 
                             {/* Right Column: Illustration + Text */}
                             <div className={styles.contentColumn}>
-                                <div className={styles.illustrationContainer}>
-                                    <Image
-                                        src={feature.illustration}
-                                        alt="Illustration"
-                                        fill
-                                        style={{ objectFit: 'contain' }}
-                                    />
+                                <div className={styles.textWrapper}>
+                                    <div className={styles.illustrationContainer}>
+                                        <Image
+                                            src={feature.illustration}
+                                            alt="Illustration"
+                                            fill
+                                            style={{ objectFit: 'contain' }}
+                                        />
+                                    </div>
+                                    <h3 className={styles.featureTitle}>{feature.title}</h3>
+                                    <div className={styles.featureDescription}>{feature.description}</div>
                                 </div>
-                                <h3 className={styles.featureTitle}>{feature.title}</h3>
-                                <div className={styles.featureDescription}>{feature.description}</div>
                             </div>
                         </motion.div>
                     ))}
