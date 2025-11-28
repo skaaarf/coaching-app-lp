@@ -1,12 +1,14 @@
 import { MetadataRoute } from 'next';
 
+const baseUrl = 'https://career-counseller.jp';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
-        {
-            url: 'https://career-counseller.jp',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 1,
-        },
-    ];
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+  ];
 }
