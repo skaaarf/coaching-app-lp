@@ -86,7 +86,7 @@ export default function Features() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        みかたくんとできること
+                        AI進路くんとできること
                     </motion.h2>
                 </div>
 

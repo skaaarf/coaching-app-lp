@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className={styles.brand}>
                         <Link href="/" className={styles.logo}>
                             <MessageCircleHeart size={24} />
-                            <span>みかたくん</span>
+                            <span>AI進路くん</span>
                         </Link>
                         <p className={styles.tagline}>対話とゲームでキャリアを考える</p>
                     </div>
@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.copyright}>
-                    &copy; {new Date().getFullYear()} みかたくん. All rights reserved.
+                    &copy; {new Date().getFullYear()} AI進路くん. All rights reserved.
                 </div>
             </div>
         </footer>

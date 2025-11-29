@@ -8,7 +8,7 @@ export default function CTA() {
                 <div className={styles.card}>
                     <h2 className={styles.title}>あなたのキャリアを、<br />もっと自由に。</h2>
                     <p className={styles.description}>
-                        みかたくんは、あなたのキャリア形成の頼れるパートナーです。<br />
+                        AI進路くんは、あなたのキャリア形成の頼れるパートナーです。<br />
                         まずは気軽に、AIと話してみませんか？
                     </p>
                     <a href="https://app.career-counseller.jp/" className={styles.button}>

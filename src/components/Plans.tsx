@@ -32,7 +32,7 @@ export default function Plans() {
                     </h2>
                     <p className={styles.description}>
                         学生の皆さんに、将来のことをもっと自由に考えてほしいから。<br />
-                        みかたくんは、課金なしですべての機能を開放しています。
+                        AI進路くんは、課金なしですべての機能を開放しています。
                     </p>
 
                     <ul className={styles.features}>

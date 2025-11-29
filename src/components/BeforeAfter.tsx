@@ -15,7 +15,7 @@ export default function BeforeAfter() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    「みかたくん」で、<br />
+                    「AI進路くん」で、<br />
                     あなたの悩みは自信に変わる
                 </motion.h2>
 

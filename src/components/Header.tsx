@@ -8,12 +8,12 @@ export default function Header() {
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
                     <MessageCircleHeart size={32} />
-                    <span>みかたくん</span>
+                    <span>AI進路くん</span>
                 </Link>
 
                 {/* <nav className={styles.nav}>
                     <Link href="#features" className={styles.navLink}>特徴</Link>
-                    <Link href="#about" className={styles.navLink}>みかたくんとは</Link>
+                    <Link href="#about" className={styles.navLink}>AI進路くんとは</Link>
                 </nav> */ }
 
                 <a href="https://app.career-counseller.jp/" className={`btn btn-primary ${styles.ctaButton}`} target="_blank" rel="noopener noreferrer">

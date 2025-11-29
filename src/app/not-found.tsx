@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'ページが見つかりません - みかたくん',
+    title: 'ページが見つかりません - AI進路くん',
     robots: {
         index: false,
         follow: false,
