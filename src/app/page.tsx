@@ -4,6 +4,7 @@ import Empathy from '@/components/Empathy';
 import Problem from '@/components/Problem';
 import Features from '@/components/Features';
 import BeforeAfter from '@/components/BeforeAfter';
+import FAQ from '@/components/FAQ';
 import Closing from '@/components/Closing';
 import Footer from '@/components/Footer';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Features />
       </div>
       <BeforeAfter />
+      <FAQ />
       <Closing />
       <Footer />
     </main>

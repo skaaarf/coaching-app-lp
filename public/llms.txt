@@ -1,0 +1,43 @@
+# llms.txt - AIクローラー向けの設定ファイル
+
+# サイト情報
+Site: AI進路くん - 進路に迷う学生のためのAIキャリア相談アプリ
+URL: https://career-counseller.jp
+Description: 学生の進路選択をサポートするAI搭載のキャリア相談アプリケーション。価値観診断、キャリア辞典、人生振り返りなどの機能を提供。
+
+# クローラー設定
+User-agent: *
+Allow: /
+
+# サイトマップ
+Sitemap: https://career-counseller.jp/sitemap.xml
+
+# アクセス制限
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+
+# 主要コンテンツ
+# ホームページ - ランディングページ
+Path: /
+Description: AI進路くんのメインランディングページ。アプリの主要機能と特徴を紹介。
+
+# 主要機能
+Features:
+- 価値観診断バトル: ユーザーの価値観を明確化するインタラクティブな診断機能
+- キャリア辞典: 様々な職業の情報と人生のタイムラインを提供
+- 人生振り返り: ユーザーの経験を整理し、キャリア選択をサポート
+- AIチャット相談: AI進路くんとの対話型キャリア相談
+
+# キーワード
+Keywords: キャリア相談, 進路選択, AI, 学生, 価値観診断, 職業情報, キャリア支援, 進路指導
+
+# 言語
+Language: ja
+
+# 対象ユーザー
+Target Audience: 進路に迷う学生、キャリア選択を考える若者
+
+# 更新頻度
+Update Frequency: weekly

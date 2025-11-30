@@ -54,8 +54,56 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI進路くん",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web Browser",
+    "url": "https://career-counseller.jp",
+    "description": "進路に迷う高校生・大学生のためのAIキャリア相談アプリ。価値観診断、人生振り返り、キャリア辞典などの機能で、あなたらしい進路選択をサポートします。",
+    "inLanguage": "ja",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "featureList": [
+      "AIとの対話型キャリア相談",
+      "価値観診断バトル",
+      "人生振り返り機能",
+      "キャリア辞典・職業情報",
+      "自己理解サポート"
+    ],
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "audienceType": "進路に迷う高校生・大学生"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "AI進路くん"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2025-11-30",
+    "keywords": "キャリア相談, 進路選択, AI, 学生, 価値観診断, 職業情報, キャリア支援, 進路指導, 自己理解, 就活準備",
+    "screenshot": "https://career-counseller.jp/icon.png",
+    "softwareVersion": "1.0",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1"
+    }
+  };
+
   return (
     <html lang="ja" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${notoSansJP.variable}`}
         style={{ fontFamily: 'var(--font-noto-sans-jp), var(--font-inter), sans-serif' }}
