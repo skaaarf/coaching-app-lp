@@ -34,7 +34,7 @@ export default function Empathy() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        進路のことで、こんな不安ありませんか？
+                        進路のことで<br className={styles.mobileBr} />こんな不安<br className={styles.mobileBr} />ありませんか？
                     </motion.h2>
                     <motion.p
                         className={styles.intro}
@@ -43,8 +43,8 @@ export default function Empathy() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        周りにも同じように悩んでいる人は多いのに、<br />
-                        なぜか自分だけが取り残された気持ちになることがあります。
+                        周りにも同じように<br className="mobileBr" />悩んでいる人は多いのに、<br />
+                        なぜか自分だけが<br className="mobileBr" />取り残された気持ちに<br className="mobileBr" />なることがあります。
                     </motion.p>
                 </div>
 

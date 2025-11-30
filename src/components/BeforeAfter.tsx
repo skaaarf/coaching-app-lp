@@ -16,7 +16,7 @@ export default function BeforeAfter() {
                     transition={{ duration: 0.6 }}
                 >
                     「AI進路くん」で、<br />
-                    あなたの悩みは自信に変わる
+                    あなたの悩みは<br className="mobileBr" />自信に変わる
                 </motion.h2>
 
                 <div className={styles.comparison}>

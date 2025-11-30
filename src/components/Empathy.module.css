@@ -18,6 +18,7 @@
     font-weight: 700;
     color: var(--foreground);
     letter-spacing: 0.05em;
+    margin-bottom: 32px;
 }
 
 .grid {

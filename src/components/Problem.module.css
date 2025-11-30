@@ -177,10 +177,11 @@
     margin-top: 40px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F0 100%);
     border: 1px solid #FFE4C4;
-    padding: 20px 48px;
+    padding: 20px 32px;
     border-radius: 100px;
     box-shadow: 0 10px 40px -10px rgba(253, 176, 61, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -247,5 +248,20 @@
     .content {
         gap: 32px;
         margin-bottom: 40px;
+    }
+
+    .messageWrapper {
+        padding: 16px 24px;
+        gap: 12px;
+    }
+
+    .message {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .icon {
+        flex-shrink: 0;
     }
 }

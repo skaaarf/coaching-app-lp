@@ -86,7 +86,7 @@ export default function Features() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        AI進路くんとできること
+                        AI進路くんと<br className="mobileBr" />できること
                     </motion.h2>
                 </div>
 

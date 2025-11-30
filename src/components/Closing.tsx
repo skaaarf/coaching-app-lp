@@ -16,9 +16,9 @@ export default function Closing() {
                     transition={{ duration: 0.8 }}
                 >
                     迷うのは自然なこと。<br />
-                    <span className={styles.underline}>でも、一人で抱え込む必要はない。</span><br />
+                    <span className={styles.underline}>でも、一人で<br className={styles.mobileBr} />抱え込む必要はない。</span><br />
                     <br />
-                    あなたの<span className={styles.highlight}>“本音”</span>と<span className={styles.highlight}>“未来”</span>を<br />
+                    あなたの<br className="mobileBr" /><span className={styles.highlight}>"本音"</span>と<span className={styles.highlight}>"未来"</span>を<br />
                     真剣に考えるAIコーチ
                 </motion.h2>
 

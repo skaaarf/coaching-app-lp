@@ -103,3 +103,14 @@ h6 {
     padding: 100px 0;
   }
 }
+
+/* Mobile-only line breaks */
+.mobileBr {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobileBr {
+    display: inline;
+  }
+}
