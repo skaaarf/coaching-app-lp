@@ -17,7 +17,14 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/icon.png',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/icon.png' },
+    ],
   },
   openGraph: {
     title: "AI進路くん｜進路に迷う学生のためのAIキャリア相談アプリ",
